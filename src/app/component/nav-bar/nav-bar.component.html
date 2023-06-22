@@ -1,0 +1,24 @@
+<nav class="bg-white flex py-4 justify-center items-center">
+  <div class="flex w-[80%] justify-between items-center">
+    <p class="p-2 text-2xl font-semibold text-primary">DevFolio</p>
+    <ul class="md:flex font-semibold space-x-6 hidden">
+      <li class=" hover:border-b-2 hover:border-b-black ">HOME</li>
+      <li class=" hover:border-b-2 hover:border-b-black ">ABOUT</li>
+      <li class=" hover:border-b-2 hover:border-b-black ">SERVICES</li>
+      <li class=" hover:border-b-2 hover:border-b-black ">WORK</li>
+      <li class=" hover:border-b-2 hover:border-b-black ">CONTACT</li>
+    </ul>
+    <button (click)="onclick()" class="md:hidden">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</nav>
+<div *ngIf="istrue" class="md:hidden flex flex-col justify-center items-center left-4 top-[55px] mt-4 p-4 absolute w-full bg-white transition-all duration-1000">
+  <ul class="font-semibold text-primary space-y-4">
+    <li class=" hover:border-b-2 hover:border-b-black ">HOME</li>
+    <li class=" hover:border-b-2 hover:border-b-black ">ABOUT</li>
+    <li class=" hover:border-b-2 hover:border-b-black ">SERVICES</li>
+    <li class=" hover:border-b-2 hover:border-b-black ">WORK</li>
+    <li class=" hover:border-b-2 hover:border-b-black ">CONTACT</li>
+  </ul>
+</div>
